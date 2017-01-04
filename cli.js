@@ -13,7 +13,7 @@ if (!_command) {
 const r = () => {
   switch (_command) {
     case 'getActivities':
-      return app.getActivities()
+      return app.getActivities(process.argv[3], process.argv[4])
     default:
       return Promise.reject((`Command "${_command}" is not declared.`))
   }
