@@ -14,6 +14,9 @@ const r = () => {
   switch (_command) {
     case 'getActivities':
       return app.getActivities(process.argv[3], process.argv[4])
+    case 'getActivityBookings':
+    console.log('a')
+      return app.getActivityBookings(process.argv[3])
     default:
       return Promise.reject((`Command "${_command}" is not declared.`))
   }
