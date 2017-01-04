@@ -20,8 +20,9 @@ const r = () => {
 }
 
 r()
-  .then(() => {
-    console.info(`Command '${_command}' completed!`)
+  .then(out => {
+    console.log(out)
+    console.log(`Command '${_command}' completed!`)
   })
   .catch(error => {
     exitCode = 1
