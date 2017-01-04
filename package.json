@@ -4,7 +4,9 @@
   "description": "A module for getting WODs etc. from CrossFit Nordic",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "patch-release": "npm version patch && npm publish && git push origin master --follow-tags",
+    "minor-release": "npm version minor && npm publish && git push origin master --follow-tags",
+    "major-release": "npm version major && npm publish && git push origin master --follow-tags"
   },
   "author": "src@ilix.se",
   "license": "ISC",
