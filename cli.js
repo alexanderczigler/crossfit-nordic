@@ -16,8 +16,12 @@ const r = () => {
       return app.getActivities(process.argv[3], process.argv[4])
     case 'getActivityBookings':
       return app.getActivityBookings(process.argv[3])
+    case 'book':
+      return app.book(process.argv[3])
     case 'getPersons':
       return app.getPersons()
+    case 'generateapi3token':
+      return app.generateapi3token()
     default:
       return Promise.reject((`Command "${_command}" is not declared.`))
   }
