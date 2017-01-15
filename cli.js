@@ -1,6 +1,6 @@
 'use strict'
 
-const app = require('./lib/index')
+const app = require('./index')
 
 let exitCode = 0
 const _command = process.argv[2]
